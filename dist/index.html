@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-bar"><h1><i class="material-icons">
+      filter_drama
+    </i>Weather</h1></div>
+    <div class="form-bar">
+      <form action="#" method="GET" class="userInput">
+        <input 
+        type="text"
+        class="cityInput"
+        />
+        <button class="searchbtn"
+        type="submit">
+            <i class="material-icons">search</i>
+        </button>
+      </form>  
+    </div>
+    <div class="info-container">
+        <h3 class="cityName"></h3>
+        <p id="temperature"></p>
+        <p id="feels-like"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
