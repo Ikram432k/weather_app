@@ -11,18 +11,20 @@
 <body>
     <div class="header-bar"><h1><i class="material-icons">
       filter_drama
-    </i>Weather</h1></div>
+    </i> Weather</h1></div>
     <div class="form-bar">
       <form action="#" method="GET" class="userInput">
         <input 
         type="text"
         class="cityInput"
+        required
         />
         <button class="searchbtn"
         type="submit">
             <i class="material-icons">search</i>
         </button>
-      </form>  
+      </form> 
+      <p class="error-msg"></p> 
     </div>
     <div class="info-container">
         <h3 class="cityName"></h3>
