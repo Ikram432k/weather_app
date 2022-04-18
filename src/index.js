@@ -40,6 +40,7 @@
     if (searchValue.validity.valueMissing) {
       errormsg.textContent = 'Please enter the location';
     } else {
+      errormsg.textContent = '';
       getweather(input);
       form.reset();
     }
