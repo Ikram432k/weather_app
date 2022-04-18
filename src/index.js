@@ -26,7 +26,7 @@
   }
   async function getweather(city = 'chennai') {
     try {
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=1a1c4234f8b096d80ccfdcc2739f719a`, { mode: 'cors' });
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=1a1c4234f8b096d80ccfdcc2739f719a`, { mode: 'cors' });
       if (!response.ok) throw new Error(`Location ${city} not found`);
       const data = convertdata(await response.json());
       veiwDetails(data);
